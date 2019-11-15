@@ -57,6 +57,10 @@ provider:
 functions:
   request:
     handler: handler.request
+    events:
+      - http:
+          path: request
+          method: post
   
   delegateEvents:
     handler: handler.delegateEvents
@@ -67,10 +71,7 @@ functions:
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
-    events:
-      - http:
-          path: request
-          method: post
+
       
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}

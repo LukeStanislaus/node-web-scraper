@@ -1,0 +1,20 @@
+{
+  "name": "google-scraper",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "serverless.com",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-google-cloudfunctions": "*"
+  },
+  "dependencies": {
+    "jsdom": "^15.2.1",
+    "mongodb": "2.2.36",
+    "mysql": "^2.17.1",
+    "node-fetch": "^2.6.0"
+  }
+}

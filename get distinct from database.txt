@@ -1,0 +1,7 @@
+    db.athleteNumbers.distinct("athleteNumber").forEach((num)=>{
+      var i = 0;
+      db.athleteNumbers.find({athleteNumber: num}).forEach((doc)=>{
+        if (i)   db.athleteNumbers.remove({athleteNumber: num}, { justOne: true })
+        i++
+      })
+    });
